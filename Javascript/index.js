@@ -35,7 +35,7 @@ function bookMarklist(bookmark)
 {
     const li = document.createElement("li");
     li.classList.add("bookMark");
-    bookMark.innerHTML=`<span><a href="${bookmark.url}">${bookmark.name}</a></span> 
+    li.innerHTML=`<span><a href="${bookmark.url}">${bookmark.name}</a></span> 
     <span><button id="remove-btn" onclick="removefromList(${bookmark.id})">Remove</button></span>`
     return li;
 }
